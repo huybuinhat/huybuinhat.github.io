@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Bui Nhat Huy - researcher in development economics at the Institute of Vietnam and World Economy, Vietnam Academy of Social Sciences. Circular economy, digital economy and regional policy in Vietnam.">
+<meta property="og:title" content="Bui Nhat Huy">
+<meta property="og:description" content="Development economics - circular economy, digital economy, and regional policy in Vietnam.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128216;</text></svg>">
+<style>
+html{color-scheme:light dark}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Bui Nhat Huy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f8f9fb; --surface:#ffffff; --surface-2:#f1f3f7;
+  --ink:#111c2c; --ink-2:#3d4a5d; --ink-3:#717d8e;
+  --line:#e3e7ee; --line-strong:#c6cdd9;
+  --accent:#1c3a63; --accent-ink:#1c3a63; --accent-soft:#e8edf5;
+  --lead:#8a2f3b; --lead-soft:#f8ebec;
+  --pop:#c2601f;
+  --t-circular:#1f7a63; --t-climate:#2d7a93; --t-digital:#3549a0;
+  --t-regional:#b26418; --t-industry:#7a3f7e; --t-macro:#4a5a70; --t-social:#8a2f3b;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1520; --surface:#151c29; --surface-2:#1c2433;
+    --ink:#e8ecf3; --ink-2:#b2bccb; --ink-3:#7f8b9c;
+    --line:#26303f; --line-strong:#3a4658;
+    --accent:#86aede; --accent-ink:#9dbfe9; --accent-soft:#1a2740;
+    --lead:#e08a95; --lead-soft:#2e1c20;
+    --pop:#e4914f;
+    --t-circular:#57b89e; --t-climate:#6cb4cb; --t-digital:#8a9be4;
+    --t-regional:#dba064; --t-industry:#bb8cc0; --t-macro:#93a6bd; --t-social:#e08a95;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1520; --surface:#151c29; --surface-2:#1c2433;
+  --ink:#e8ecf3; --ink-2:#b2bccb; --ink-3:#7f8b9c;
+  --line:#26303f; --line-strong:#3a4658;
+  --accent:#86aede; --accent-ink:#9dbfe9; --accent-soft:#1a2740;
+  --lead:#e08a95; --lead-soft:#2e1c20;
+  --pop:#e4914f;
+  --t-circular:#57b89e; --t-climate:#6cb4cb; --t-digital:#8a9be4;
+  --t-regional:#dba064; --t-industry:#bb8cc0; --t-macro:#93a6bd; --t-social:#e08a95;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--serif); font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+a:hover{border-bottom-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+
+.wrap{max-width:1200px; margin:0 auto; padding-inline:20px; padding-block:0}
+.layout{display:grid; grid-template-columns:1fr; gap:0}
+@media (min-width:980px){
+  .layout{grid-template-columns:286px minmax(0,1fr); gap:56px; align-items:start}
+  .rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 26px); padding-block:44px 24px}
+}
+
+.rail{padding-block:36px 8px}
+.portrait{width:104px; height:104px; border-radius:3px; overflow:hidden; background:var(--surface-2); margin-bottom:16px; border:1px solid var(--line)}
+.portrait img{width:100%; height:100%; object-fit:cover; display:block}
+h1{font-size:28px; line-height:1.14; margin:0 0 6px; font-weight:600; letter-spacing:-.015em; text-wrap:balance}
+.rail .role{font-size:13.5px; color:var(--ink-2); margin:0; line-height:1.5}
+.tagline{margin:16px 0 0; font-size:15px; color:var(--ink-2); font-style:italic; line-height:1.5}
+.railmeta{margin-top:20px; padding-top:16px; border-top:1px solid var(--line); display:flex; flex-direction:column; gap:7px}
+.railmeta a,.railmeta span.row{font-family:var(--mono); font-size:11.5px; color:var(--ink-2); border:0; display:block}
+.railmeta a:hover{color:var(--accent-ink)}
+.railmeta .k{color:var(--ink-3); display:inline-block; width:66px}
+nav.toc{margin-top:20px; padding-top:16px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:5px 14px}
+nav.toc a{font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-3); border:0}
+nav.toc a:hover{color:var(--accent-ink)}
+#themeToggle{margin-top:20px; font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; background:none; border:1px solid var(--line-strong); color:var(--ink-3); padding:5px 10px; border-radius:2px; cursor:pointer}
+#themeToggle:hover{color:var(--ink); border-color:var(--ink-3)}
+
+main{padding-block:36px 72px; min-width:0}
+section{margin-bottom:54px; scroll-margin-top:24px}
+h2{font-family:var(--mono); font-size:11.5px; font-weight:600; text-transform:uppercase; letter-spacing:.14em; color:var(--ink-3); margin:0 0 20px; padding-bottom:9px; border-bottom:1px solid var(--line)}
+h2 .count{color:var(--line-strong); font-weight:400; letter-spacing:.06em}
+.prose{max-width:66ch; color:var(--ink-2)}
+.prose p{margin:0 0 13px}
+.prose strong{color:var(--ink); font-weight:600}
+
+/* role summary strip */
+.rolebar{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); margin-bottom:24px}
+.rolebar div{background:var(--surface); padding:12px 14px}
+.rolebar b{display:block; font-family:var(--mono); font-size:23px; font-weight:600; line-height:1.1; color:var(--pop); font-variant-numeric:tabular-nums}
+.rolebar span{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-3)}
+
+.posts{list-style:none; margin:0; padding:0}
+.posts li{display:grid; grid-template-columns:126px 1fr; gap:18px; padding:12px 0; border-bottom:1px solid var(--line)}
+.posts li:last-child{border-bottom:0}
+.posts .when{font-family:var(--mono); font-size:11.5px; color:var(--ink-3); padding-top:4px; font-variant-numeric:tabular-nums}
+.posts .what b{display:block; font-weight:600; font-size:16px}
+.posts .what span{font-size:14px; color:var(--ink-2)}
+@media (max-width:560px){.posts li{grid-template-columns:1fr; gap:2px} .posts .when{padding-top:0}}
+
+.themes{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.theme{background:var(--surface); padding:15px 16px}
+.theme h3{margin:0 0 5px; font-size:15.5px; font-weight:600; display:flex; align-items:center; gap:8px; line-height:1.3}
+.theme p{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.5}
+.dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto; background:var(--d,var(--accent))}
+
+.controls{display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:10px}
+.controls + .controls{margin-bottom:22px}
+.clabel{font-family:var(--mono); font-size:10px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); margin-right:2px}
+.chip{font-family:var(--mono); font-size:11px; letter-spacing:.04em; text-transform:uppercase; background:var(--surface); border:1px solid var(--line-strong); color:var(--ink-2); padding:4px 9px; border-radius:2px; cursor:pointer; display:inline-flex; align-items:center; gap:6px}
+.chip:hover{border-color:var(--ink-3); color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+#q{font-family:var(--mono); font-size:12px; padding:5px 10px; border-radius:2px; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink); min-width:160px; flex:1 1 160px; max-width:250px}
+#q::placeholder{color:var(--ink-3)}
+
+.year{display:grid; grid-template-columns:86px minmax(0,1fr); gap:20px; align-items:start}
+.year > .y{font-family:var(--mono); font-size:25px; font-weight:600; color:var(--line-strong); position:sticky; top:calc(env(safe-area-inset-top,0px) + 16px); padding-top:17px; font-variant-numeric:tabular-nums; letter-spacing:-.02em}
+.items{display:flex; flex-direction:column; min-width:0}
+.item{padding:17px 0; border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item h3{margin:0 0 9px; font-size:17.5px; font-weight:600; line-height:1.33; text-wrap:balance}
+.meta{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:11px; align-items:center}
+.tag{font-family:var(--mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; padding:2px 7px; border-radius:2px; border:1px solid var(--line-strong); color:var(--ink-3); white-space:nowrap}
+.tag.role{border-color:color-mix(in srgb,var(--lead) 55%,transparent); color:var(--lead); background:var(--lead-soft); font-weight:600}
+.tag.thm{border-color:color-mix(in srgb,var(--d) 45%,transparent); color:var(--d)}
+dl.facts{margin:0; display:grid; grid-template-columns:82px minmax(0,1fr); gap:5px 16px; font-size:14.3px}
+dl.facts dt{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-3); padding-top:4px}
+dl.facts dd{margin:0; color:var(--ink-2); line-height:1.52}
+@media (max-width:560px){
+  .year{grid-template-columns:1fr; gap:4px}
+  .year > .y{position:static; font-size:20px; padding-top:22px}
+  dl.facts{grid-template-columns:1fr; gap:1px 0}
+  dl.facts dt{padding-top:8px}
+}
+
+.pubyear{font-family:var(--mono); font-size:11.5px; font-weight:600; color:var(--ink-3); letter-spacing:.08em; margin:22px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line)}
+.pubyear:first-child{margin-top:0}
+.pub{padding:10px 0; border-bottom:1px solid var(--line); font-size:14.8px; line-height:1.54}
+.pub:last-child{border-bottom:0}
+.pub .t{color:var(--ink)}
+.pub .src{color:var(--ink-2); font-style:italic}
+.pub .au{color:var(--ink-2)}
+.pub .au b{color:var(--ink); font-weight:600}
+.pub .flags{display:inline-flex; gap:5px; margin-left:6px; vertical-align:1px}
+.flag{font-family:var(--mono); font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--line-strong); color:var(--ink-3); padding:1px 5px; border-radius:2px; white-space:nowrap}
+.flag.en{border-color:color-mix(in srgb,var(--t-digital) 50%,transparent); color:var(--t-digital)}
+.flag.first{border-color:color-mix(in srgb,var(--lead) 55%,transparent); color:var(--lead)}
+
+.grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:30px}
+ul.plain{list-style:none; margin:0; padding:0}
+ul.plain li{padding:8px 0; border-bottom:1px solid var(--line); font-size:14.6px; display:grid; grid-template-columns:1fr auto; gap:14px; align-items:baseline}
+ul.plain li:last-child{border-bottom:0}
+ul.plain .yr{font-family:var(--mono); font-size:11.5px; color:var(--ink-3); font-variant-numeric:tabular-nums; white-space:nowrap}
+ul.plain small{display:block; color:var(--ink-3); font-size:13px}
+
+footer{border-top:1px solid var(--line); padding-block:22px 40px; color:var(--ink-3); font-family:var(--mono); font-size:11.5px; display:flex; flex-wrap:wrap; gap:8px 22px}
+.empty{padding:26px 0; color:var(--ink-3); font-style:italic; font-size:14.5px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<div class="layout">
+
+<aside class="rail">
+  <div class="portrait"><img src="portrait.jpg" alt="Bui Nhat Huy"></div>
+  <h1>Bui Nhat Huy</h1>
+  <p class="role">Researcher, Institute of Vietnam and World Economy, Vietnam Academy of Social Sciences<br>Master of Economics candidate, University of Queensland</p>
+  <p class="tagline">Development economics — circular economy, digital economy, and regional policy in Vietnam.</p>
+  <div class="railmeta">
+    <a href="mailto:huybuinhat1811@gmail.com"><span class="k">Email</span>huybuinhat1811@gmail.com</a>
+    <a href="https://scholar.google.com/citations?user=ZQjQQA4AAAAJ"><span class="k">Scholar</span>scholar.google.com</a>
+    <a href="https://sti.vista.gov.vn/views/nnc/8c80b91828a8c2df11be6c1630cc5bdc-1307869.html"><span class="k">NASATI</span>CB.1307869</a>
+    <a href="https://www.linkedin.com/in/huybnhat/"><span class="k">LinkedIn</span>in/huybnhat</a>
+    <span class="row"><span class="k">Based in</span>Brisbane, Australia</span>
+  </div>
+  <nav class="toc">
+    <a href="#about">About</a>
+    <a href="#positions">Positions</a>
+    <a href="#methods">Methods</a>
+    <a href="#themes">Themes</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#recognition">Recognition</a>
+  </nav>
+  <button id="themeToggle" type="button" aria-label="Switch colour theme">Dark mode</button>
+</aside>
+
+<main>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="prose">
+    <p>I am a researcher at the <strong>Institute of Vietnam and World Economy</strong>, Vietnam Academy of Social Sciences, where I have worked since October 2021 in the Regional and Local Economics Division. From 2026 I am reading for a <strong>Master of Economics at the University of Queensland</strong>.</p>
+    <p>My research turns on three connected questions: how a circular economy can be measured and built in a middle-income country; how the digital economy is financed and governed; and what actually drives growth across Vietnam’s regions and border provinces. Around these sit related strands on climate impacts in coastal economies and on industrial policy for emerging sectors such as semiconductors.</p>
+    <p>Methodologically I work across quantitative and qualitative approaches: panel-data regression and modified Solow growth models for regional analysis, PESTLE frameworks and survey instruments for local economic studies, and structured comparative case analysis for international-experience research. My working tools are <strong>EViews</strong> and <strong>SPSS</strong>, which I use for both panel estimation and survey analysis; <strong>Python at a basic level</strong>; and <strong>R in progress</strong>, which I am learning by reproducing my published border-province panel study as a public replication package. Publications are indexed on <a href="https://scholar.google.com/citations?user=ZQjQQA4AAAAJ">Google Scholar</a>.</p>
+  </div>
+</section>
+
+<section id="positions">
+  <h2>Positions &amp; education</h2>
+  <ul class="posts">
+    <li><span class="when">2026 –</span><span class="what"><b>Master of Economics</b><span>University of Queensland, Brisbane, Australia</span></span></li>
+    <li><span class="when">Oct 2021 –</span><span class="what"><b>Researcher, Regional and Local Economics Division</b><span>Institute of Vietnam and World Economy, Vietnam Academy of Social Sciences, Hanoi</span></span></li>
+    <li><span class="when">Mar 2024 –</span><span class="what"><b>Vice President, Youth Theoretical Club</b><span>Vietnam Academy of Social Sciences Youth Union</span></span></li>
+    <li><span class="when">2017 – 2021</span><span class="what"><b>Bachelor of Economics, Development Economics</b><span>National Economics University, Hanoi — GPA 3.23/4.00, Distinction</span></span></li>
+  </ul>
+</section>
+
+<section id="methods">
+  <h2>Methods &amp; tools</h2>
+  <p class="prose" style="margin-bottom:18px">I pick the tool the question needs rather than the one I already know, and add to the set when a project calls for it.</p>
+  <div class="grid2">
+    <div>
+      <ul class="plain">
+        <li><span>Panel-data regression<small>Fixed and random effects across 25 provinces, 2015–2023 (EViews, SPSS)</small></span></li>
+        <li><span>Modified Solow growth model<small>Investment and growth decomposition; total factor productivity</small></span></li>
+        <li><span>Survey design and analysis<small>Instrument design, sampling and analysis, n = 492 (SPSS)</small></span></li>
+        <li><span>Contingent valuation<small>Willingness-to-pay estimation for urban infrastructure</small></span></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="plain">
+        <li><span>Comparative institutional analysis<small>Structured cross-country policy comparison, 7 countries and 14 organisations</small></span></li>
+        <li><span>PESTLE and indicator design<small>Purpose-built indicator sets for local economic assessment</small></span></li>
+        <li><span>Software<small>EViews · SPSS · Excel · Python (basic) · R (in progress)</small></span></li>
+        <li><span>Languages<small>Vietnamese (native) · English (IELTS 7.5)</small></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="themes">
+  <h2>Research themes</h2>
+  <div class="themes" id="themeGrid"></div>
+</section>
+
+<section id="research">
+  <h2>Research projects <span class="count" id="projCount"></span></h2>
+  <div class="rolebar" id="rolebar"></div>
+  <div class="rolebar" id="scalebar" style="margin-top:-16px">
+    <div><b>3</b><span>National programme projects</span></div>
+    <div><b>3</b><span>Provincial &amp; city master plans</span></div>
+    <div><b>7bn VND</b><span>Combined budget of national programmes worked on</span></div>
+    <div><b>5 years</b><span>Continuous research practice</span></div>
+  </div>
+  <div class="controls" id="roleControls"><span class="clabel">Role</span></div>
+  <div class="controls" id="projControls"><span class="clabel">Theme</span></div>
+  <div id="timeline"></div>
+</section>
+
+<section id="publications">
+  <h2>Publications <span class="count" id="pubCount"></span></h2>
+  <div class="controls">
+    <button class="chip" data-k="all" aria-pressed="true" type="button">All</button>
+    <button class="chip" data-k="chapter" type="button">Book chapters</button>
+    <button class="chip" data-k="journal" type="button">Journal articles</button>
+    <button class="chip" data-k="conference" type="button">Conference papers</button>
+    <input id="q" type="search" placeholder="Filter by keyword…" autocomplete="off">
+  </div>
+  <div id="pubList"></div>
+</section>
+
+<section id="recognition">
+  <h2>Recognition</h2>
+  <div class="grid2">
+    <div>
+      <ul class="plain">
+        <li><span>Excellent Task Completion Award<small>President of the Vietnam Academy of Social Sciences — three consecutive years</small></span><span class="yr">2022–24</span></li>
+        <li><span>Outstanding Young Writer Award<small>Vietnam Institute of Economics</small></span><span class="yr">2023, 2024</span></li>
+        <li><span>Excellent Performance in Youth Union Tasks<small>Vietnam Academy of Social Sciences Youth Union</small></span><span class="yr">2022</span></li>
+        <li><span>Excellent Performance, Labour Union “Culture and Sport”<small>Vietnam Academy of Social Sciences Labour Union</small></span><span class="yr">2022</span></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="plain">
+        <li><span>Third Prize, Student Research Competition<small>Faculty of Planning and Development, National Economics University</small></span><span class="yr">2021</span></li>
+        <li><span>Fourth Prize, Vietcombank Student Research Contest<small>National Economics University</small></span><span class="yr">2021</span></li>
+        <li><span>First Prize, “Designing My Faculty Symbol”<small>National Economics University</small></span><span class="yr">2021</span></li>
+        <li><span>IELTS 7.5</span><span class="yr">2026</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Bui Nhat Huy · Brisbane, Australia</span>
+  <a href="mailto:huybuinhat1811@gmail.com">huybuinhat1811@gmail.com</a>
+  <a href="https://scholar.google.com/citations?user=ZQjQQA4AAAAJ">Google Scholar</a>
+  <span id="updated"></span>
+  <span style="opacity:.6">v7</span>
+</footer>
+
+</main>
+</div>
+</div>
+
+<script>
+/* ============================================================
+   EDIT YOUR CONTENT HERE
+   THEMES   — research areas; `k` is the key used by projects
+   PROJECTS — `y` sorts them (higher = shown first)
+   PUBS     — publications, APA style
+   ============================================================ */
+
+const THEMES = [
+  {k:'circular', name:'Circular economy & green growth',     d:'var(--t-circular)', blurb:'Measurement systems, circular-economy ecosystems, circular agriculture, and the net-zero roadmap.'},
+  {k:'digital',  name:'Digital economy & transformation',    d:'var(--t-digital)',  blurb:'Digital government, digital infrastructure, and financing the digital economy.'},
+  {k:'regional', name:'Regional & local economic planning',  d:'var(--t-regional)', blurb:'Provincial and city master plans, the night-time economy, and border-province growth.'},
+  {k:'climate',  name:'Climate change & coastal development',d:'var(--t-climate)',  blurb:'Industrialisation, climate impacts and marine pollution in Vietnam’s coastal economies.'},
+  {k:'industry', name:'Industrial & innovation policy',      d:'var(--t-industry)', blurb:'Semiconductors, science-and-technology human resources, and startup ecosystems.'},
+  {k:'macro',    name:'Macroeconomy & resilience',           d:'var(--t-macro)',    blurb:'Annual economic assessment, growth and inflation, and economic resilience.'},
+  {k:'social',   name:'Public policy & social economics',    d:'var(--t-social)',   blurb:'Social housing, cooperatives, public-private partnership, and welfare measurement.'}
+];
+
+const ROLES = [
+  {k:'pi',        label:'Principal investigator', short:'Led'},
+  {k:'secretary', label:'Scientific secretary',   short:'Secretary'},
+  {k:'principal', label:'Principal member',       short:'Principal member'},
+  {k:'member',    label:'Team member',            short:'Member'}
+];
+
+const PROJECTS = [
+
+/* ---------- Principal investigator ---------- */
+{y:2026.9, label:'2026', role:'pi', kind:'Institute-level', theme:'digital',
+ title:'Mobilising capital for digital-economy development in Vietnam in the new context',
+ focus:'How Vietnam finances the build-out of its digital economy. The study maps the available channels — state budget, private and foreign investment, public-private partnership, and blended instruments — and sets out the institutional conditions each one requires, then reads those requirements against Vietnam’s current investment climate and the shift in policy that followed the national digital-transformation programme.',
+ approach:'Review of international financing models, combined with analysis of Vietnamese investment and digital-economy statistics.',
+
+ scale:'Sole principal investigator · Centre for Policy and Strategy', period:'Completed June 2026',
+ context:'Institute-level research task, Centre for Policy and Strategy, Institute of Vietnam and World Economy. Designed and executed as sole principal investigator.'},
+
+{y:2025.95, label:'2025', role:'pi', kind:'Institute-level', theme:'industry',
+ title:'International experience in semiconductor-industry development: policy implications for Vietnam',
+ focus:'Where Vietnam actually sits in the global semiconductor value chain, and which national strategy follows from that position. Comparing Taiwan, China and Malaysia, the study finds Vietnam most closely resembles Malaysia around 1990 — concentrated in assembly, testing and packaging, with a gap at the fabrication stage and an acute shortage of high-skilled labour. It argues for a staged strategy: consolidate the packaging position in the short run, invest selectively in design and R&D for niche markets in the long run, and treat high-quality human-resource development as the binding constraint rather than a supporting measure.',
+ approach:'Structured comparative analysis of development models across each stage of the semiconductor value chain.',
+
+ scale:'12 months · sole principal investigator · 3 country cases across the full value chain', period:'January – December 2025',
+ context:'Institute-level research task, Centre for Policy and Strategy Research on Local and Territorial Economics. Published as a sole-authored article in World Economic and Political Issues, No. 355 (2025).'},
+
+{y:2024.1, label:'2023–24', role:'pi', kind:'Institute-level', theme:'circular',
+ title:'International experience in developing circular-economy ecosystems',
+ focus:'How circular-economy ecosystems are assembled abroad — the actors, incentives, infrastructure and intermediary institutions that make circularity work at system level rather than firm by firm. The study traces the European model in particular, identifying the policy sequencing that let material loops close, and draws out which components Vietnam can adopt directly and which depend on institutional capacity it does not yet have.',
+ approach:'Comparative analysis of European and Asian ecosystem models.',
+
+ scale:'11 months · sole principal investigator', period:'March 2023 – January 2024',
+ context:'Institute-level research task, Regional and Local Economics Division. Accepted 2024. Published in the Journal of State Management (2024).'},
+
+{y:2023.1, label:'2022–23', role:'pi', kind:'Institute-level', theme:'circular',
+ title:'Principles for building a circular-economy development measurement system for Vietnam',
+ focus:'How circular-economy progress is actually measured, and what a measurement system fit for Vietnam would contain. The study reviews existing systems by year of introduction, originating institution and structural pillar — including the European resource-efficiency scoreboard and material-flow accounting — then proposes a set of criteria for a Vietnamese system, drawn from fourteen organisations and seven European and Asian countries.',
+ approach:'Systematic review and comparative classification of measurement frameworks.',
+
+ scale:'13 months · sole principal investigator · 14 organisations and 7 countries reviewed', period:'January 2022 – January 2023',
+ context:'Institute-level research task. Became chapter 4 of “Building a roadmap for the development of a circular economy in Vietnam to 2030, vision 2050” (Truth National Political Publishing House), of which I am lead author, and an article in the Journal of Economic Studies.'},
+
+/* ---------- Scientific secretary ---------- */
+{y:2026.5, label:'2025–26', role:'secretary', kind:'Ministry-level', theme:'social',
+ title:'Developing organic agricultural cooperatives in Vietnam: the cases of Hoa Binh and Son La',
+ focus:'Whether the “new-style” cooperative introduced by the 2012 and 2023 Cooperative Laws can carry organic agriculture in Vietnam’s northern mountainous provinces. The study builds the theoretical case — separating the new-style cooperative from both the collectivised model and the private firm on ownership, governance and membership — then tests it against practice in Hoa Binh and Son La, with recommendations running to 2030.',
+ approach:'Theoretical review of cooperative models, comparative institutional analysis, and provincial fieldwork.',
+
+ scale:'350 million VND · 24 months · coordinating the project as scientific secretary, 5.1 person-months', period:'January 2025 – December 2026',
+ context:'Ministry-level task of the Vietnam Academy of Social Sciences. Principal investigator Dr Do Dieu Huong. As scientific secretary I coordinate the project and authored the theoretical-framework and two-province fieldwork chapters.'},
+
+/* ---------- Principal member ---------- */
+{y:2029, label:'2025–29', role:'member', kind:'National programme', theme:'circular',
+ title:'Public-private partnership in Mekong Delta industrial parks under the circular-economy model',
+ focus:'Designing a partnership mechanism that lets Mekong Delta industrial parks convert to circular-economy operation while adapting to climate change. The project builds the analytical framework and evaluation criteria, identifies the internal and external factors that determine whether such partnerships hold, reviews what has and has not worked internationally, and pilots the resulting model in selected parks.',
+ approach:'Framework construction, criteria-set development, factor analysis, international case comparison, and field piloting.',
+
+ scale:'3.5 billion VND · 39 months · 11-member team across a five-institution consortium', period:'November 2025 – January 2029 (39 months)',
+ context:'National-level project under programme KC.15/21-30. Principal investigator Dr Do Dieu Huong. Partners: Institute of Human Geography and Sustainable Development, Institute for Circular Economy Development (VNU-HCM), Can Tho Department of Science and Technology, Hung Vuong University.'},
+
+{y:2025.2, label:'2022–25', role:'principal', kind:'National programme', theme:'social',
+ title:'Vietnam’s state economy: orientation and policy solutions for the new period',
+ focus:'The role and proper boundaries of the state economic sector as Vietnam enters a new development phase — what the state sector should do, where it crowds out private activity, and which reforms follow.',
+ approach:'Institutional and policy analysis.',
+
+ scale:'3.5 billion VND · 36 months · national key programme KX.04/21-25', period:'March 2022 – February 2025',
+ context:'National-level project KX.04.17/21-25 under the key national programme “Political theory research 2021–2025” (KX.04/21-25), Central Theoretical Council and Ministry of Science and Technology. Principal investigator Dr Pham Anh Tuan. Accepted 2025.'},
+
+{y:2024.4, label:'2023–24', role:'principal', kind:'Ministry-level', theme:'macro',
+ title:'Vietnam Economic Report 2023',
+ focus:'Annual assessment of Vietnam’s macroeconomic performance, together with an evaluation of the socio-economic recovery and development programme created by National Assembly Resolution 43.',
+ approach:'Macroeconomic analysis combined with programme-implementation evidence from provincial fieldwork.',
+ period:'April 2023 – March 2024',
+ context:'Ministry-level project of the Vietnam Academy of Social Sciences, principal investigator Dr Pham Anh Tuan. Findings summarised for a general readership in the Journal of National Treasury Management.'},
+
+{y:2023.4, label:'2022–23', role:'principal', kind:'Ministry-level', theme:'digital',
+ title:'Vietnam Economy 2022: strengthening digital transformation to drive economic recovery',
+ focus:'Digital transformation as a recovery instrument in the year Vietnam reopened — how far digital adoption had spread across sectors, and whether it was carrying the recovery or merely accompanying it.',
+ approach:'Macroeconomic analysis with sectoral digital-adoption evidence.',
+ period:'March 2022 – June 2023',
+ context:'Ministry-level project of the Vietnam Academy of Social Sciences, principal investigator Dr Pham Anh Tuan.'},
+
+{y:2023.3, label:'2022–23', role:'principal', kind:'International grant', theme:'social',
+ title:'Evaluation of Vietnam’s economic recovery and development programme',
+ focus:'How National Assembly Resolution 43 and Government Resolution 11 were implemented on the ground, and why delivery diverged so sharply between localities. The evaluation traced each policy package through the responsible departments — planning and investment as coordinator, transport for public infrastructure, health for grassroots medical upgrading — and documented where coordination broke down.',
+ approach:'In-depth interviews and field surveys in Ho Chi Minh City, Hai Phong and Bac Giang.',
+ period:'January 2022 – March 2023',
+ context:'Funded by Aus4Skills Australian Alumni Grants (AAGF-R4-2021), Australian Embassy. Presented at the Vietnam Socio-Economic Forum 2022 and reported to the National Assembly forum.'},
+
+{y:2022.4, label:'2021–22', role:'principal', kind:'Ministry-level', theme:'macro',
+ title:'Vietnam’s economy amid the COVID-19 pandemic: recovery and transformation',
+ focus:'The economic damage of the pandemic and the shape of the recovery and structural transformation that had to follow — my first ministry-level project.',
+ approach:'Macroeconomic analysis and policy review.',
+ period:'March 2021 – March 2022',
+ context:'Ministry-level project of the Vietnam Academy of Social Sciences, principal investigator Assoc. Prof. Bui Quang Tuan.'},
+
+/* ---------- Team member ---------- */
+{y:2027, label:'2024–27', role:'member', kind:'National programme', theme:'macro',
+ title:'Strengthening economic resilience for Vietnam’s development in the new context',
+ focus:'What makes an economy able to absorb shocks and keep growing — and which policy levers build that capacity in Vietnam after a decade of pandemic, supply-chain and climate disruption.',
+ period:'2024 – 2027',
+ context:'National-level project under programme KX.01/21-30. In progress.'},
+
+{y:2026.2, label:'2025–26', role:'member', kind:'Provincial', theme:'regional',
+ title:'Lai Chau provincial master plan — sectoral development rationale',
+ focus:'The development case for industry, services, tourism, trade, agriculture and science and technology in Vietnam’s north-western border province, written into the plan’s explanatory report.',
+ approach:'Documentary analysis against the approved national and Northern Midlands master plans, with interviews at provincial departments.',
+ period:'December 2025 – early 2026',
+ context:'Assignment of the Centre for Policy and Strategy, Institute of Vietnam and World Economy. In progress.'},
+
+{y:2025.6, label:'2025', role:'member', kind:'Provincial', theme:'industry',
+ title:'Framework programme for science, technology, innovation and digital transformation, Quang Ninh province to 2030',
+ focus:'Which research and technology priorities Quang Ninh should fund, and how to judge whether that funding works. The study reviews a decade of provincial science-and-technology investment, benchmarks the province against the twelve national strategic technology fields, and proposes an impact-assessment method for research spending.',
+ approach:'Investment review, national benchmarking, and impact-assessment design.',
+ period:'Report delivered October 2025',
+ context:'Provincial task NV.CT.H49.2025.09 for the Quang Ninh Department of Science and Technology, led by Dr Ha Huy Ngoc.'},
+
+{y:2025.5, label:'2024–25', role:'member', kind:'Ministry-level', theme:'regional',
+ title:'Border-region economic development in industry, trade and investment',
+ focus:'What actually drives growth in Vietnam’s land-border provinces. The work analysed 25 border provinces from 2015 to 2023 and found a sharp split: in provinces inside key economic regions, foreign, private and public investment all raised output, with public investment strongest; outside those regions, public investment was almost the only driver, revealing heavy dependence on fiscal transfers. Public expenditure outside development investment depressed growth in both groups — evidence of a crowding-out effect.',
+ approach:'Modified Solow growth model with panel-data regression across 25 provinces over nine years (EViews); total factor productivity analysis of the Vietnam–China border area.',
+
+ scale:'20 months · 25 provinces over 9 years · 3 journal articles', period:'March 2024 – November 2025',
+ context:'Ministry-level project. Produced three journal articles, including a co-first-authored study in the Journal of Economic Studies (2025).'},
+
+{y:2025.4, label:'2024–25', role:'member', kind:'City-level', theme:'macro',
+ title:'New-generation free trade agreements and sustainable exports',
+ focus:'How the new generation of free trade agreements is reshaping the conditions for sustainable export growth in Vietnamese commodity sectors.',
+ period:'2024 – 2025',
+ context:'City-level research project. In progress.'},
+
+{y:2025.3, label:'2022–25', role:'member', kind:'City-level', theme:'regional',
+ title:'Developing the night-time economy in Hai Phong to 2030',
+ focus:'Whether a major port city can build a night-time economy that amounts to more than scattered food streets — and what licensing, infrastructure and cultural policy that would take. The study found Hai Phong has the foundations, with high living standards and a rich tourism and heritage base, but that night-time activity remains fragmented, unplanned and under-coordinated. Economic and environmental conditions, along with respondents’ age and education, significantly shaped participation.',
+ approach:'Mixed methods: PESTLE framework, a survey of 492 respondents analysed in SPSS, licensing-process assessment, and a purpose-built indicator set covering cultural and creative industries, infrastructure, tourism, income and local governance.',
+
+ scale:'3 years · 11-member team · survey of 492 respondents · final report of 12 chapters', period:'2022 – 2025',
+ context:'City-level science and technology project under Hai Phong People’s Committee Decision 3185/QD-UBND. Eleven-member team. Published in the Journal of Economic Studies, No. 12 (571), 2025.'},
+
+{y:2025.1, label:'2023–25', role:'member', kind:'City-level', theme:'regional',
+ title:'Ho Chi Minh City Master Plan 2021–2030, vision to 2050 — components 09 and 66',
+ focus:'Component 09 sets out a sharing-economy development plan for the city to 2030. Component 66 works out the spatial organisation of socio-economic development for Binh Thanh District within the city plan.',
+ approach:'Sectoral and spatial planning analysis within the national master-planning framework.',
+
+ scale:'2 of the plan’s component reports · 178-page district report plus a 27-page summary', period:'2023 – 2025',
+ context:'Project of the Ho Chi Minh City People’s Committee, Department of Planning and Investment. Both component reports were delivered in late 2023.'},
+
+{y:2024.8, label:'2022–24', role:'member', kind:'Ministry-level', theme:'climate',
+ title:'Economic aspects of coastal development under industrialisation and climate change',
+ focus:'What industrialisation and climate change jointly do to the economies of Vietnam’s coastal provinces. My contribution assessed climate impacts at national and provincial level: extreme climate events caused an estimated 229,958 billion VND of damage between 2011 and 2020, annual maximum temperatures rose by 0.2–1.7°C across most of the country, and hot days increased by 10 to 40 per year in the coastal north and central regions.',
+ approach:'Impact assessment using meteorological series, vulnerability mapping, and household evidence from Hai Phong and Kien Giang.',
+ scale:'19 months · ministry key programme · authored the climate-impact chapter, 2 journal articles followed',
+ period:'December 2022 – June 2024',
+ context:'Ministry-level project under the key programme “Social sciences and humanities in sustainable development”, principal investigator Assoc. Prof. Bui Quang Tuan. Produced two journal articles.'},
+
+{y:2024.7, label:'2023–24', role:'member', kind:'Ministry-level', theme:'climate',
+ title:'Marine environmental pollution in Vietnam’s coastal regions and control solutions',
+ focus:'The scale and sources of marine pollution along Vietnam’s coast, and which control instruments are workable given existing enforcement capacity.',
+ period:'June 2023 – June 2024',
+ context:'Ministry-level project under the key programme “Social sciences and humanities in sustainable development”.'},
+
+{y:2024.6, label:'2023–24', role:'member', kind:'Ministry-level', theme:'circular',
+ title:'Circular agriculture in Dak Lak province: current state and proposed solutions',
+ focus:'Whether circular agriculture can take hold in a Central Highlands province that is the economic centre of its region. The study assessed the models already operating in Dak Lak, the conditions that sustain or defeat them, and the support measures the province would need to scale them.',
+ approach:'Field assessment of operating models with provincial policy analysis.',
+ period:'June 2023 – October 2024',
+ context:'Ministry-level project 2023–2024, principal investigator Dr Bui Thu Trang, Vietnam Institute of Economics.'},
+
+{y:2024.5, label:'2023–24', role:'member', kind:'Ministry-level', theme:'social',
+ title:'Secondary database for Vietnam’s national welfare index',
+ focus:'Collecting, consolidating and assessing the secondary data needed to construct a national welfare index — establishing what exists, what is missing, and what can be measured reliably.',
+ period:'June 2023 – November 2024',
+ context:'Ministry-level project under the key programme to build a national welfare index set.'},
+
+{y:2024.3, label:'2023–24', role:'member', kind:'Ministry-level', theme:'macro',
+ title:'Growth and inflation in Vietnam to 2025',
+ focus:'The interaction between growth and inflation in Vietnam through the post-pandemic period, and what it implies for the 2025 targets.',
+ approach:'Macroeconomic modelling and forecasting.',
+ period:'January 2023 – December 2024',
+ context:'Ministry-level project of the Vietnam Academy of Social Sciences.'},
+
+{y:2024.25, label:'2023–24', role:'member', kind:'City-level', theme:'social',
+ title:'Investment mechanisms and policies for urban wastewater collection and treatment in Hanoi under public-private partnership',
+ focus:'Whether public-private partnership can close Hanoi’s wastewater-treatment financing gap. The study approached partnership from the angle of public works that need large capital and yield no direct revenue, drawing lessons from the United States, Singapore and Australia and reading them against Hanoi’s regulatory and fiscal position.',
+ approach:'International case study with regulatory analysis.',
+ period:'June 2023 – December 2024',
+ context:'City-level project of the Hanoi Department of Science and Technology. Published in Economy and Forecast Review, No. 10 (905), 2025.'},
+
+{y:2024.2, label:'2022–24', role:'member', kind:'City-level', theme:'industry',
+ title:'Developing an innovative startup ecosystem in Hanoi',
+ focus:'What is missing from Hanoi’s startup ecosystem and which levers the city government actually controls — mapping the ecosystem’s components and proposing measures the city can implement on its own authority.',
+ approach:'Ecosystem mapping and policy analysis.',
+ period:'July 2022 – March 2024',
+ context:'City-level project CT02/082022-2, principal investigator Dr Ha Huy Ngoc, Vietnam Institute of Economics.'},
+
+{y:2024.15, label:'2022–24', role:'member', kind:'Provincial', theme:'industry',
+ title:'Building Vinh City into an innovation hub for the North Central region',
+ focus:'What it would take for Vinh to become the innovation centre of the North Central region — the assets it already has, the institutional gaps, and the sequence of measures that would close them.',
+ period:'August 2022 – June 2024',
+ context:'Provincial research project, Nghe An province.'},
+
+{y:2022.2, label:'2020–22', role:'member', kind:'Ministry-level', theme:'regional',
+ title:'Economic linkages among Vietnam’s coastal localities',
+ focus:'How coastal provinces connect economically — where linkage generates gains, and where administrative boundaries prevent it.',
+ period:'June 2020 – June 2022',
+ context:'Ministry-level project, Vietnam Institute of Economics.'}
+];
+
+const PUBS = [
+/* 2025 */
+{y:2025, k:'journal', au:['Bui, N. H.'], first:true, t:'International experience and strategic directions for Vietnam’s semiconductor industry development', src:'World Economic and Political Issues', det:'No. 355, November 2025. ISSN 0868-2984'},
+{y:2025, k:'journal', au:['Ha, H. N.','Bui, N. H.','Do, D. H.'], t:'Current situation and development potential of the night-time economy in Hai Phong, Vietnam', src:'Journal of Economic Studies', det:'No. 12 (571), December 2025. ISSN 0866-7489'},
+{y:2025, k:'journal', au:['Bui, N. H.','Ly, H. M.'], first:true, t:'Impact of investment on economic growth in Vietnam’s border provinces', src:'Journal of Economic Studies', det:'No. 7 (566), July 2025, pp. 58–70'},
+{y:2025, k:'journal', au:['Bui, N. H.','Do, D. H.'], first:true, t:'Vietnam’s digital economy in 2024 and prospects for 2025', src:'Journal of Economic Studies', det:'No. 4 (563), April 2025'},
+{y:2025, k:'journal', au:['Do, D. H.','Bui, N. H.'], t:'International experience with private-sector development models and lessons for Vietnam', src:'Journal of Finance', det:'Issue 1, May 2025 (848), pp. 30–34'},
+{y:2025, k:'journal', au:['Tran, M. T.','Bui, N. H.'], t:'Public-private partnership investment in urban wastewater collection and treatment: international experience and implications for Hanoi', src:'Economy and Forecast Review', det:'No. 10 (905), May 2025'},
+{y:2025, k:'journal', au:['Nguyen, D. C.','Bui, N. H.','Nguyen, D. L.'], t:'Drivers of economic development in Vietnam’s land-border regions', src:'Human Geography and Sustainable Development', det:'Vol. 15, No. 2'},
+{y:2025, k:'conference', au:['Do, D. H.','Bui, N. H.'], t:'Investment in digital infrastructure: a new growth driver for Vietnam in the technological era', src:'Open Innovation Conference 2025', det:'Topic Area II: AI strategy, digital infrastructure and innovation ecosystems', en:true},
+{y:2025, k:'conference', au:['Do, D. H.','Nguyen, T. T.','Bui, N. H.'], t:'Public-private partnership in digital-economy infrastructure: international experience and policy recommendations for localities in Central Vietnam', src:'2025 International Conference on Business Environment, Transformation to Green Economics, and Regional Sustainable Development', det:'Hong Duc Publishing House, pp. 294–305'},
+
+/* 2024 */
+{y:2024, k:'chapter', au:['Ha, H. N.','Do, D. H.','Bui, N. H.','Pham, P.'], t:'Journey to implement the national strategy on green growth in Vietnam', src:'National Strategy on Green Growth: journey towards net-zero emissions in Vietnam', det:'Truth National Political Publishing House, pp. 201–334. ISBN 978-604-57-9100-4. Adopted as reference material by the Ministry of Planning and Investment'},
+{y:2024, k:'chapter', au:['Ha, H. N.','Bui, N. H.','Do, D. H.','Nguyen, D. L.'], t:'Roadmap for implementing Vietnam’s commitment to net-zero emissions by 2050', src:'National Strategy on Green Growth: journey towards net-zero emissions in Vietnam', det:'Truth National Political Publishing House, pp. 612–670'},
+{y:2024, k:'journal', au:['Bui, Q. T.','Tran, M. T.','Bui, N. H.','Nguyen, T. H. T.'], t:'Assessing the impact of industrialisation and climate change on sustainable coastal economic development in Hai Phong', src:'Vietnam Social Sciences Review', det:'No. 8 (200), pp. 49–58'},
+{y:2024, k:'journal', au:['Tran, M. T.','Bui, Q. T.','Bui, N. H.'], t:'Evaluating the impact of climate change on sustainable economic development: empirical research in the coastal area of Kien Giang, Vietnam', src:'International Journal of Humanities, Education, and Social Sciences', det:'Vol. 2, No. 3. e-ISSN 3026-0892', en:true},
+{y:2024, k:'journal', au:['Bui, N. H.','Vu, P. M.'], first:true, t:'Developing the circular-economy ecosystem in Europe and policy implications for Vietnam', src:'Journal of State Management', det:'2024'},
+{y:2024, k:'journal', au:['Bui, N. H.'], first:true, t:'Vietnam’s economy in 2023 and prospects for 2024', src:'Journal of National Treasury Management', det:'No. 260, February 2024, pp. 12–14'},
+{y:2024, k:'journal', au:['Bui, N. H.','Do, D. H.'], first:true, t:'Vietnam’s digital economy in 2023 and prospects for 2024', src:'Journal of Economic Studies', det:'No. 6 (553), June 2024'},
+{y:2024, k:'journal', au:['Bui, N. H.'], first:true, t:'Factors affecting consumers’ electric-vehicle purchase decisions in Hanoi', src:'Journal of Economic Studies', det:'November 2024'},
+{y:2024, k:'journal', au:['Do, D. H.','Bui, N. H.'], t:'Reforming state-owned enterprise governance in China: experience and lessons', src:'Journal of Finance', det:'Issue 1, May 2024 (824), pp. 24–27'},
+{y:2024, k:'journal', au:['Do, D. H.','Bui, N. H.'], t:'Carbon taxes: international experience and suggestions for Vietnam', src:'Journal of Finance', det:'Issue 2, April 2024 (823), pp. 22–26. ISSN 2815-8973'},
+
+/* 2023 */
+{y:2023, k:'chapter', au:['Bui, N. H.'], first:true, t:'International experience in building a measurement system for the development of a circular economy', src:'Building a roadmap for the development of a circular economy in Vietnam to 2030, vision 2050', det:'Chapter 4, lead author. Truth National Political Publishing House. ISBN 978-604-57-8012-1'},
+{y:2023, k:'chapter', au:['Bui, Q. T.','Bui, N. H.','Nguyen, G.','Vu, N.'], t:'Transforming e-government into digital government in Vietnam', src:'Digital transformation: international experience and roadmap for Vietnam', det:'Truth National Political Publishing House, pp. 187–250. ISBN 978-604-57-8225-5'},
+{y:2023, k:'chapter', au:['Ha, H. N.','Hoang, T.','Bui, N. H.','Vu, N.'], t:'Digitalisation progress in the private sector in Vietnam', src:'Digital transformation: international experience and roadmap for Vietnam', det:'Truth National Political Publishing House, pp. 397–456'},
+{y:2023, k:'journal', au:['Bui, N. H.'], first:true, t:'Principles for building a circular-economy development measurement system for Vietnam', src:'Journal of Economic Studies', det:'No. 11 (535), pp. 38–50'},
+{y:2023, k:'journal', au:['Pham, A. T.','Bui, N. H.'], t:'China’s science, technology and human-resource development policies', src:'Vietnam Social Sciences Review', det:'No. 7 (187), July 2023, pp. 57–67. DOI 10.56794/KHXHVN.7(187).57-67'},
+{y:2023, k:'journal', au:['Ly, D. H.','Bui, N. H.','Pham, T. C.'], t:'Improving growth quality through the circular-economy model', src:'Regional Sustainable Development', det:'No. 12'},
+
+/* 2022 */
+{y:2022, k:'journal', au:['Bui, N. H.'], first:true, t:'Potential for circular-economy development in Hai Phong city', src:'Journal of Economic Studies', det:'No. 12 (535), pp. 34–45. ISSN 0866-7489'},
+{y:2022, k:'journal', au:['Bui, N. H.'], first:true, t:'Social housing development: research on experiences from selected European countries', src:'World Economic and Political Issues', det:'No. 2. ISSN 0868-2984'},
+{y:2022, k:'conference', au:['Bui, Q. T.','Pham, A. T.','Vu, Q. H.','Nguyen, D. L.','Bui, N. H.'], t:'Implementing socio-economic recovery and development programmes in localities: observations from Hai Phong and Bac Giang', src:'Vietnam Socio-Economic Forum 2022', det:'National Assembly forum paper'},
+{y:2022, k:'conference', au:['Bui, N. H.'], first:true, t:'The problem of land resources for social housing in Vietnam', src:'National workshop: continuing to innovate land policy in the spirit of Resolution XIII of the Party', det:'2022'},
+{y:2022, k:'conference', au:['Ha, H. N.','Bui, N. H.'], t:'The role of public engagement in developing the circular economy in Vietnam', src:'15th NEU-KKU International Conference on Socio-Economic and Environmental Issues in Development', det:'Finance Publishing House, pp. 2415–2427. ISBN 978-604-79-3205-4', en:true},
+{y:2022, k:'conference', au:['Bui, N. H.'], first:true, t:'The role of the state in developing the circular economy in Vietnam', src:'Annual Regional Sustainable Development Conference 2022', det:'ISBN 978-604-386-226-3'},
+
+/* 2021 */
+{y:2021, k:'journal', au:['Bui, N. H.'], first:true, t:'Willingness to pay for urban railway Metro line No. 3, Nhon – Hanoi Station', src:'Journal of Economic Studies', det:'No. 12 (523), pp. 89–101. ISSN 0866-7489'},
+{y:2021, k:'journal', au:['Ha, H. N.','Tran, T. H.','Bui, N. H.'], t:'Global green-recovery trends after the COVID-19 pandemic and policy recommendations for Vietnam', src:'Journal of Economic Studies', det:'No. 10 (521), pp. 61–73'},
+{y:2021, k:'conference', au:['Ha, H. N.','Bui, N. H.'], t:'Managing the circular-economy development model: international experiences and lessons learned', src:'International Conference on International Trade and Investment towards Green and Digital Transformation (CIECI 2021)', det:'Vietnam National University Press, pp. 351–378. ISBN 978-604-379-219-5', en:true},
+
+/* 2020 */
+{y:2020, k:'conference', au:['Bui, N. H.','Nguyen, T. H.'], first:true, t:'Social housing development: experiences from selected European countries', src:'National conference: developing social-infrastructure systems toward sustainable development for industrial parks in Bac Ninh province', det:'National Economics University Publishing House, pp. 203–213'}
+];
+
+/* ============================================================
+   Rendering — no need to edit below this line.
+   ============================================================ */
+const themeOf = k => THEMES.find(t => t.k === k) || {name:k, d:'var(--accent)'};
+const roleOf  = k => ROLES.find(r => r.k === k)  || {label:k, short:k};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shortName = n => n.split(' &')[0].split(' —')[0];
+
+document.getElementById('themeGrid').innerHTML = THEMES.map(t => `
+  <div class="theme">
+    <h3><span class="dot" style="--d:${t.d}"></span>${esc(t.name)}</h3>
+    <p>${esc(t.blurb)}</p>
+  </div>`).join('');
+
+/* role summary */
+document.getElementById('rolebar').innerHTML = ROLES.map(r => {
+  const n = PROJECTS.filter(p => p.role === r.k).length;
+  return `<div><b>${n}</b><span>${esc(r.label)}${n === 1 ? '' : ''}</span></div>`;
+}).join('');
+
+/* filter chips */
+const roleCtrl = document.getElementById('roleControls');
+const projCtrl = document.getElementById('projControls');
+function addChip(host, key, text, dot, pressed){
+  const b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button'; b.dataset.v = key;
+  b.setAttribute('aria-pressed', String(!!pressed));
+  b.innerHTML = (dot ? `<span class="dot" style="--d:${dot}"></span>` : '') + esc(text);
+  host.appendChild(b);
+  return b;
+}
+addChip(roleCtrl, 'all', 'All', null, true);
+ROLES.forEach(r => addChip(roleCtrl, r.k, r.label));
+addChip(projCtrl, 'all', 'All', null, true);
+THEMES.forEach(t => addChip(projCtrl, t.k, shortName(t.name), t.d));
+
+let fRole = 'all', fTheme = 'all';
+function renderProjects(){
+  const list = PROJECTS
+    .filter(p => fRole === 'all' || p.role === fRole)
+    .filter(p => fTheme === 'all' || p.theme === fTheme)
+    .sort((a,b) => b.y - a.y);
+  const box = document.getElementById('timeline');
+  if (!list.length){ box.innerHTML = '<p class="empty">No projects match this filter.</p>'; return; }
+  const groups = [];
+  list.forEach(p => {
+    const g = groups[groups.length - 1];
+    if (g && g.label === p.label) g.items.push(p); else groups.push({label:p.label, items:[p]});
+  });
+  box.innerHTML = groups.map(g => `
+    <div class="year">
+      <div class="y">${esc(g.label)}</div>
+      <div class="items">${g.items.map(p => {
+        const th = themeOf(p.theme), rl = roleOf(p.role);
+        const rows = [['Focus', p.focus], ['Approach', p.approach], ['Period', p.period], ['Scale', p.scale], ['Context', p.context]]
+          .filter(r => r[1]);
+        return `<article class="item">
+          <h3>${esc(p.title)}</h3>
+          <div class="meta">
+            <span class="tag role">${esc(rl.label)}</span>
+            <span class="tag">${esc(p.kind)}</span>
+            <span class="tag thm" style="--d:${th.d}">${esc(shortName(th.name))}</span>
+          </div>
+          <dl class="facts">${rows.map(r => `<dt>${r[0]}</dt><dd>${esc(r[1])}</dd>`).join('')}</dl>
+        </article>`;
+      }).join('')}</div>
+    </div>`).join('');
+}
+roleCtrl.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  fRole = b.dataset.v;
+  [...roleCtrl.querySelectorAll('.chip')].forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+  renderProjects();
+});
+projCtrl.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  fTheme = b.dataset.v;
+  [...projCtrl.querySelectorAll('.chip')].forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+  renderProjects();
+});
+
+let pubKind = 'all', pubQ = '';
+function renderPubs(){
+  const q = pubQ.trim().toLowerCase();
+  const list = PUBS.filter(p => pubKind === 'all' || p.k === pubKind)
+    .filter(p => !q || [p.t, p.src, p.det, ...(p.au || [])].join(' ').toLowerCase().includes(q))
+    .sort((a,b) => b.y - a.y);
+  const box = document.getElementById('pubList');
+  if (!list.length){ box.innerHTML = '<p class="empty">Nothing matches that filter.</p>'; return; }
+  let out = '', cur = null;
+  list.forEach(p => {
+    if (p.y !== cur){ cur = p.y; out += `<div class="pubyear">${p.y}</div>`; }
+    const au = (p.au || []).map(a => a.startsWith('Bui, N. H.') ? `<b>${esc(a)}</b>` : esc(a));
+    const auStr = au.length > 1 ? au.slice(0, -1).join(', ') + ', &amp; ' + au[au.length - 1] : au[0];
+    out += `<div class="pub">
+      <span class="au">${auStr} (${p.y}).</span>
+      <span class="t">${esc(p.t)}.</span>
+      <span class="src">${esc(p.src)}</span>, ${esc(p.det)}.
+      <span class="flags">${p.first ? '<span class="flag first">First author</span>' : ''}${p.en ? '<span class="flag en">English</span>' : ''}<span class="flag">${p.k === 'chapter' ? 'Book chapter' : p.k === 'conference' ? 'Conference' : 'Journal'}</span></span>
+    </div>`;
+  });
+  box.innerHTML = out;
+}
+document.querySelectorAll('[data-k]').forEach(b => b.addEventListener('click', () => {
+  pubKind = b.dataset.k;
+  document.querySelectorAll('[data-k]').forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+  renderPubs();
+}));
+document.getElementById('q').addEventListener('input', e => { pubQ = e.target.value; renderPubs(); });
+
+document.getElementById('projCount').textContent = PROJECTS.length;
+document.getElementById('pubCount').textContent = PUBS.length;
+
+const root = document.documentElement, btn = document.getElementById('themeToggle');
+function isDark(){
+  return root.dataset.theme === 'dark' ||
+    (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+}
+function label(){ btn.textContent = isDark() ? 'Light mode' : 'Dark mode'; }
+try { const s = localStorage.getItem('bnh-theme'); if (s) root.dataset.theme = s; } catch(e){}
+btn.addEventListener('click', () => {
+  root.dataset.theme = isDark() ? 'light' : 'dark';
+  try { localStorage.setItem('bnh-theme', root.dataset.theme); } catch(e){}
+  label();
+});
+label();
+
+document.getElementById('updated').textContent =
+  'Updated ' + new Date().toLocaleDateString('en-GB', {month:'long', year:'numeric'});
+
+renderProjects();
+renderPubs();
+</script>
+
+</body>
+</html>
